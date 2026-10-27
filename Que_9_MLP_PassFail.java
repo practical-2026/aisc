@@ -9,11 +9,10 @@ public class Que_9_MLP_PassFail {
         double[] t = { 0, 0, 1, 1 };
         double lr = 0.5;
 
-        // 2 inputs -> 2 hidden -> 1 output (initial weights fixed)
-        double[][] w = { { 0.5, -0.4 }, { 0.3, 0.8 } }; // w[input][hidden]
-        double[] bh = { 0.1, -0.2 }; // hidden biases
-        double[] v = { 0.6, -0.5 }; // hidden -> output
-        double bo = 0.2; // output bias
+        double[][] w = { { 0.5, -0.4 }, { 0.3, 0.8 } };
+        double[] bh = { 0.1, -0.2 };
+        double[] v = { 0.6, -0.5 }; 
+        double bo = 0.2; 
         double[] h = new double[2];
 
         for (int epoch = 0; epoch < 10000; epoch++) {
